@@ -1,0 +1,26 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scope</title>
+</head>
+<body>
+    <a href="/ejercicios/">Go Back</a>
+    <p><em>Abre la Consola</em></p>
+
+    <script>
+
+        //BlockScope
+        function printNumbers(){
+            for(let i = 0; i<10; i++){
+                setTimeout(function () {
+                    console.log(i);
+                }, 100)
+            }
+        }
+
+        printNumbers();
+
+
+    </script>
+</body>
+</html>
